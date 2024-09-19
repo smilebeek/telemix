@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #9709b4, #085078);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%; /* Use a percentage for better responsiveness */
+    max-width: 450px; /* Set a max-width to limit expansion on large screens */
+    text-align: center;
+    margin-top: 50px; /* Adjust margin for better spacing */
+    margin-bottom: 50px; /* Adjust margin for better spacing */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #9709b4, #085078);
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo-m-img {
+    width: 190px;
+}
+
+.about {
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #9709b4, #085078);
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-item a:hover {
+    text-decoration: none;
+    color: #007FFF;
+}
+
+/* Media query adjustments for iPhone 14 Pro Max and similar screens */
+@media only screen and (max-width: 430px) {
+    .container {
+        width: 95%; /* Slightly larger for better fit */
+        margin-top: 90px; /* Adjust margins for visibility */
+        margin-bottom: 90px;
+    }
+
+    .header {
+        padding: 12px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .logo {
+        font-size: 20px; /* Slightly smaller logo font size */
+    }
+
+    .logo-m-img {
+        width: 160px; /* Adjust logo size */
+    }
+
+    .navbar {
+        padding: 12px 0; /* Adjust padding */
+    }
+
+    .nav-item {
+        font-size: 13px; /* Adjust text size */
+    }
+}
